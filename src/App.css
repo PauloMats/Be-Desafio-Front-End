@@ -5,10 +5,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -26,13 +26,13 @@ table {
 }
 
 th, td {
-  padding: 15px;
+  padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
 th {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background-color: #007bff;
   color: white;
   font-weight: bold;
 }
@@ -50,12 +50,13 @@ img {
 
 input {
   padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
   box-sizing: border-box;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 768px) {
