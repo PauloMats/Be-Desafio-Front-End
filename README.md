@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Teste Técnico Front-end Be
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um repositório para realização do Teste Técnico em Front-end da [Be Mobile](https://bemobile.tech/). Irei desenvolver uma aplicação web que irá consumir uma API simulada e exibir os dados em uma tabela utilizando React.js e TypeScript.
 
-## Available Scripts
+## Desafio proposto
 
-In the project directory, you can run:
+O Teste Técnico para Front-End da Be consiste em construir a visualização de uma tabela com dados que virão de uma API simulada, em json-server. A tabela deve conter informações de usuários, como nome, cargo, data de admissão, telefone e imagem.
 
-### `npm start`
+### Mockup da Tabela
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este é o [projeto em Figma](https://www.figma.com/file/yw6th52zE9bubewc6ayTg5/Teste-T%C3%A9cnico-Front-End-Be.?type=design&node-id=1%3A4&mode=dev&t=vVxs9eyKybrYmq4Z-1) para eu possa me orientar. Nele, irei encontrará estilos, visualização desktop e mobile e outros padrões que deverei seguir.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Requisitos Gerais a serem desenvolvidos
 
-### `npm test`
+Irei utilizar TypeScript com React.js para construir o projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A visualização será responsiva.
 
-### `npm run build`
+A tabela deve conter as seguintes colunas:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- imagem (thumb do/a usuário/a);
+- nome;
+- cargo
+- data de admissão;
+- telefone.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Também deve ser possível realizar pesquisa na tabela por meio de um input. O input de pesquisa deve permitir filtrar dados por cargo, nome e telefone.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Datas e telefones devem ser formatadas no front-end e não na API.
