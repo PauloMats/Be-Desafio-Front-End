@@ -20,7 +20,7 @@ const EmployeeTable: React.FC = () => {
 
   const filteredEmployees = employees.filter(employee =>
     employee.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    employee.position.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    employee.job.toLowerCase().includes(searchTerm.toLowerCase()) ||
     employee.phone.includes(searchTerm)
   );
 
@@ -30,11 +30,11 @@ const EmployeeTable: React.FC = () => {
       <table>
         <thead>
           <tr>
-            <th>Foto</th>
-            <th>Nome</th>
-            <th>Cargo</th>
-            <th>Data de Admissão</th>
-            <th>Telefone</th>
+            <th>FOTO</th>
+            <th>NOME</th>
+            <th>CARGO</th>
+            <th>DATA DE ADMISSÃO</th>
+            <th>TELEFONE</th>
           </tr>
         </thead>
         <tbody>

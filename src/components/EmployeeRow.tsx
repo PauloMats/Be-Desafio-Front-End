@@ -15,10 +15,10 @@ const formatDate = (dateString: string): string => {
 const EmployeeRow: React.FC<EmployeeRowProps> = ({ employee }) => {
   return (
     <tr>
-      <td><img src={employee.photo} alt={employee.name} width="50" /></td>
+      <td><img src={employee.image} alt={employee.name} width="50" /></td>
       <td>{employee.name}</td>
-      <td>{employee.position}</td>
-      <td>{formatDate(employee.admissionDate)}</td>
+      <td>{employee.job}</td>
+      <td>{formatDate(employee.admission_date)}</td>
       <td>{employee.phone}</td>
     </tr>
   );
