@@ -9,8 +9,6 @@ const Header: React.FC = () => {
                 <img src={logo} alt="logotipo BeMobile" />
                  ‎ ‎ ‎  
                  </div>
-            <h1>Funcionários</h1>
-            
         </header>
     );
 };  

@@ -6,6 +6,13 @@
   padding: 0;
 }
 
+.divtop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .App-header {
   display: flex;
   align-items: center;
@@ -69,6 +76,7 @@ input {
   box-sizing: border-box;
   border: 1px solid #ddd;
   border-radius: 6px;
+  margin-right: 4%;
 }
 
 @media screen and (max-width: 768px) {

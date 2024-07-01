@@ -8,11 +8,14 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ setSearchTerm }) => {
   return (
+    <div className='divtop'>
+    <h1>Funcionários</h1>
     <input
       type="text"
       placeholder="Pesquisar"
       onChange={(e) => setSearchTerm(e.target.value)}
     />
+    </div>
   );
 };
 
