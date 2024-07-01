@@ -10,6 +10,7 @@ const Header: React.FC = () => {
                  ‎ ‎ ‎  
                  </div>
             <h1>Funcionários</h1>
+            
         </header>
     );
 };  

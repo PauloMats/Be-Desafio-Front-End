@@ -2,7 +2,6 @@ import React from 'react';
 import EmployeeTable from './components/Table/EmployeeTable';
 import Header from './components/Header/Header';
 import './App.css';
-import './components/Header/Header'
 
 const App: React.FC = () => {
   return (
