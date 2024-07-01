@@ -1,7 +1,7 @@
 // EmpoyeeRow component
 
 import React from 'react';
-import { Employee } from '../services/employeeService';
+import { Employee } from '../../services/employeeService';
 
 interface EmployeeRowProps {
   employee: Employee;

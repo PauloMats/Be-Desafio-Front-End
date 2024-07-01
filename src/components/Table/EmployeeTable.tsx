@@ -1,9 +1,9 @@
 // Employee Table Component
 
 import React, { useEffect, useState } from 'react';
-import { Employee, fetchEmployees } from '../services/employeeService';
-import EmployeeRow from './EmployeeRow';
-import SearchBar from './SearchBar';
+import { Employee, fetchEmployees } from '../../services/employeeService';
+import EmployeeRow from '../EmployeeRow/EmployeeRow';
+import SearchBar from '../SearchBar/SearchBar';
 
 const EmployeeTable: React.FC = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);
