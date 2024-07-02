@@ -1,0 +1,18 @@
+.desktop-row {
+    display: table-row;
+  }
+  
+  .mobile-row {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-row {
+      display: none;
+    }
+  
+    .mobile-row {
+      display: table-row;
+    }
+  }
+  

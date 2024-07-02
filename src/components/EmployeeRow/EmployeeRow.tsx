@@ -1,7 +1,7 @@
-// EmpoyeeRow component
-
 import React from 'react';
 import { Employee } from '../../services/employeeService';
+import './EmployeeRow.css';
+import EmployeeDetails from '../EmployeeDetails/EmployeeDetails';
 
 interface EmployeeRowProps {
   employee: Employee;
@@ -14,13 +14,20 @@ const formatDate = (dateString: string): string => {
 
 const EmployeeRow: React.FC<EmployeeRowProps> = ({ employee }) => {
   return (
-    <tr>
-      <td><img src={employee.image} alt={employee.name} width="50" /></td>
-      <td>{employee.name}</td>
-      <td>{employee.job}</td>
-      <td>{formatDate(employee.admission_date)}</td>
-      <td>{employee.phone}</td>
-    </tr>
+    <>
+      <tr className="desktop-row">
+        <td><img src={employee.image} alt={employee.name} width="50" /></td>
+        <td>{employee.name}</td>
+        <td>{employee.job}</td>
+        <td>{formatDate(employee.admission_date)}</td>
+        <td>{employee.phone}</td>
+      </tr>
+      <tr className="mobile-row">
+        <td colSpan={5}>
+          <EmployeeDetails employee={employee} />
+        </td>
+      </tr>
+    </>
   );
 };
 
