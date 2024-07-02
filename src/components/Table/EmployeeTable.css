@@ -3,10 +3,9 @@
   }
   
   @media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-      display: block;
+    table {
+      width: 100%;
     }
-  
     thead tr {
       display: none;
     }
@@ -33,10 +32,10 @@
       transform: translateY(-50%);
     }
   
-    td:nth-of-type(1)::before { content: "Foto"; }
     td:nth-of-type(2)::before { content: "Nome"; }
     td:nth-of-type(3)::before { content: "Cargo"; }
     td:nth-of-type(4)::before { content: "Data de admissão"; }
     td:nth-of-type(5)::before { content: "Telefone"; }
   }
+  
   

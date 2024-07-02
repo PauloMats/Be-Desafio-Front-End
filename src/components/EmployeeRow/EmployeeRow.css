@@ -1,7 +1,15 @@
 .desktop-row {
     display: table-row;
+    cursor: pointer;
   }
   
+  .employee-details {
+  background-color: #f9f9f9;
+}
+
+.details-container {
+  padding: 10px;
+}
   .mobile-row {
     display: none;
   }
