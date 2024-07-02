@@ -9,7 +9,7 @@ interface SearchBarProps {
 const SearchBar: React.FC<SearchBarProps> = ({ setSearchTerm }) => {
   return (
     <div className='divtop'>
-    <h1>Funcionários</h1>
+    <h2>Funcionários</h2>
     <input
       type="text"
       placeholder="Pesquisar"
