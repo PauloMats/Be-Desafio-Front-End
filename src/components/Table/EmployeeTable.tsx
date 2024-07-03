@@ -53,7 +53,7 @@ const EmployeeTable: React.FC = () => {
             <tr>
               <th>FOTO</th>
               <th>NOME</th>
-              <th>●</th>
+              <th> ‎ ‎  ‎   ‎     ●</th>
             </tr>
           </thead>
           <tbody>
