@@ -37,7 +37,6 @@ const EmployeeTable: React.FC = () => {
               <th>CARGO</th>
               <th>DATA DE ADMISSÃO</th>
               <th>TELEFONE</th>
-              <th></th>
             </tr>
           </thead>
           <tbody>
