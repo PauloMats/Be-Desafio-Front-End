@@ -1,41 +1,85 @@
+/* Estilos para a tabela móvel, escondida por padrão */
+.mobile-table {
+  display: none;
+}
+
+/* Estilos para a tabela normal, visível por padrão */
+.desktop-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: linear-gradient(to bottom, #5A84C0, #594ED2);
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fff;
+}
+
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
 .table-container {
-    overflow-x: auto;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  /* Mostrar tabela móvel e esconder tabela normal */
+  .mobile-table {
+    display: table;
+    width: 100%;
+  }
+
+  .desktop-table {
+    display: none;
   }
   
-  @media (max-width: 768px) {
-    table {
-      width: 100%;
-    }
-    thead tr {
-      display: none;
-    }
-  
-    tr {
-      margin-bottom: 10px;
-      border-bottom: 2px solid #ddd;
-    }
-  
-    td {
-      border: none;
-      position: relative;
-      padding-left: 50%;
-      text-align: right;
-    }
-  
-    td::before {
-      position: absolute;
-      top: 50%;
-      left: 15px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
-      transform: translateY(-50%);
-    }
-  
-    td:nth-of-type(2)::before { content: "Nome"; }
-    td:nth-of-type(3)::before { content: "Cargo"; }
-    td:nth-of-type(4)::before { content: "Data de admissão"; }
-    td:nth-of-type(5)::before { content: "Telefone"; }
+  /* Ajustar a tabela para ocupar a largura total da tela */
+  .mobile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
   }
-  
+
+  .mobile-table th, .mobile-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mobile-table th {
+    background: linear-gradient(to bottom, #5A84C0, #594ED2);
+    color: white;
+    font-weight: bold;
+  }
+
+  .mobile-table td {
+    background-color: #fff;
+  }
+}
+    
+
   

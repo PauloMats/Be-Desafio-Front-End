@@ -26,8 +26,10 @@ const EmployeeTable: React.FC = () => {
   return (
     <div>
       <SearchBar setSearchTerm={setSearchTerm} />
+
+      {/* Tabela normal */}
       <div className="table-container">
-        <table>
+        <table className="desktop-table">
           <thead>
             <tr>
               <th>FOTO</th>
@@ -35,7 +37,22 @@ const EmployeeTable: React.FC = () => {
               <th>CARGO</th>
               <th>DATA DE ADMISSÃO</th>
               <th>TELEFONE</th>
-              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredEmployees.map(employee => (
+              <EmployeeRow key={employee.id} employee={employee} />
+            ))}
+          </tbody>
+        </table>
+
+        {/* Tabela móvel */}
+        <table className="mobile-table">
+          <thead>
+            <tr>
+              <th>FOTO</th>
+              <th>NOME</th>
+              <th> ‎ ‎  ‎   ‎     ●</th>
             </tr>
           </thead>
           <tbody>
