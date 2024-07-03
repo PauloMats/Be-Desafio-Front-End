@@ -2,7 +2,7 @@
 .search-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   align-items: flex-start;
 }
 
@@ -28,7 +28,7 @@
 .search-input-wrapper .search-icon {
   position: absolute;
   right: 10px;
-  top: 72%;
+  top: 78%;
   transform: translateY(-50%);
   pointer-events: none; /* Para que a lupa não interfira na entrada de texto */
 }
@@ -50,7 +50,7 @@
   .search-input-wrapper {
     padding-top: 4%;
     width: 200px;
-    margin-right: 8%;
+    margin-right: 5%;
   }
 }
 
@@ -73,6 +73,9 @@
     padding-top: 5%;
     width: 92%;
     margin-left: 3%;
+  }
+  .search-input-wrapper .search-icon {
+    top: 72%;
   }
 
   .search-input-wrapper input {

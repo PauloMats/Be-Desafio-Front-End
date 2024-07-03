@@ -24,7 +24,7 @@ const EmployeeDetails: React.FC<EmployeeDetailsProps> = ({ employee }) => {
         <img src={employee.image} alt={employee.name} width="50" />
         <span>{employee.name}</span>
         <button className="expand-btn">
-          {isExpanded ? '▲' : '▼'}
+          {isExpanded ? '⮝' : '⮟'}
         </button>
       </div>
       {isExpanded && (
