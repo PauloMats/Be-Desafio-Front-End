@@ -8,35 +8,6 @@
   padding: 0;
 }
 
-.divtop{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.App-header {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #1C1C1C;
-  margin-bottom: 20px;
-}
-
-.header {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  box-shadow: 0 4px 6px -6px black;
-}
-
-h2 {
-  margin: 3%;
-}
-
 table {
   margin-left: 3%;
   max-width: 93%;
@@ -72,38 +43,3 @@ img {
   object-fit: cover;
 }
 
-input {
-  padding: 10px;
-  width: 200px;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-right: 4%;
-}
-
-@media screen and (max-width: 768px) {
-  th, td {
-    padding: 10px;
-  }
-
-  input {
-    padding: 8px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  table {
-    display: block;
-    overflow-x: auto;
-  }
-
-  th, td {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
-}

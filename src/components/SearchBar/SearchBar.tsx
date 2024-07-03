@@ -1,6 +1,7 @@
 // Search bar component
 
 import React from 'react';
+import './SearchBar.css';
 
 interface SearchBarProps {
   setSearchTerm: (term: string) => void;

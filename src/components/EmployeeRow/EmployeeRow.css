@@ -1,0 +1,26 @@
+.desktop-row {
+    display: table-row;
+    cursor: pointer;
+  }
+  
+  .employee-details {
+  background-color: #f9f9f9;
+}
+
+.details-container {
+  padding: 10px;
+}
+  .mobile-row {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-row {
+      display: none;
+    }
+  
+    .mobile-row {
+      display: table-row;
+    }
+  }
+  

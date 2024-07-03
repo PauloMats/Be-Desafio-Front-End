@@ -1,0 +1,41 @@
+.table-container {
+    overflow-x: auto;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+    thead tr {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+    }
+  
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      text-align: right;
+    }
+  
+    td::before {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      transform: translateY(-50%);
+    }
+  
+    td:nth-of-type(2)::before { content: "Nome"; }
+    td:nth-of-type(3)::before { content: "Cargo"; }
+    td:nth-of-type(4)::before { content: "Data de admissão"; }
+    td:nth-of-type(5)::before { content: "Telefone"; }
+  }
+  
+  
