@@ -30,8 +30,11 @@ Além de que, aperfeiçoei minhas habilidades em React.js, que era uma tecnologi
 Para rodar o projeto, você deve clonar este repositório e instalar as dependências. Para isso, siga os passos abaixo:
 
 1 - Clone o repositório com o comando `git clone`
+
 2 - Instale as dependências com o comando `npm install`
+
 3 - Inicie o json-server com o comando `json-server --watch db.json --port 5000`
+
 4 - Inicie o projeto com o comando `npm start`
 
 Pronto! Agora você pode visualizar o projeto no seu navegador.
